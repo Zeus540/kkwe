@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 import Forms from "./form.jsx";
-import Background from '../images/tabe.jpg'
+import Un from '../images/tabemobi.jpg'
+import Un2 from '../images/tabe.jpg'
 
 
 const Container=styled.main`
-    background-image:url(${Background});
+    background-image:url(${Un2});
     background-size:100% 100%;
     background-attachment:fixed;
     height:100%;
@@ -13,9 +14,13 @@ const Container=styled.main`
     margin:0px 0px;
     z-index:1;
     position:relative;
-
     @media (max-width:425px){
         height:100%;
+      }
+      @media(max-width:786px){
+        background-attachment: fixed;
+        background-image:url(${Un});
+        background-size:100% 100%;
       }
       @media (min-width:768px){
         height: 100vh;

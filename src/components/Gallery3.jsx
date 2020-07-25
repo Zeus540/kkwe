@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Parallax from './Parallax.jsx'
-import Un from '../images/tabe.jpg';
+import Un from '../images/tabemobi.jpg'
+import Un2 from '../images/tabe.jpg'
+
 
 
 const Container = styled.div`
@@ -12,11 +14,15 @@ margin:0 auto;
 height:100%;
 background:var(--secondary-color);
 background-attachment:fixed;
-background-image:url(${Un});
+background-image:url(${Un2});
 background-size:100% 100%;
 z-index:1;
 position:relative;
-
+@media(max-width:786px){
+  background-attachment: fixed;
+  background-image:url(${Un});
+  background-size:100% 100%;
+}
 `
 const Overlay = styled.div`
 background-color:#1716168c;

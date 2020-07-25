@@ -1,17 +1,24 @@
 import React, {Component,Fragment} from 'react';
 import styled from 'styled-components';
-import Color from '../images/t3.jpg'
+import Color from '../images/tabemobi.jpg'
+import Color2 from '../images/tabe.jpg'
 import Footer1 from './Footer1'
 import { Link } from "react-scroll";
 
 const Container = styled.div`
 width: 100%;
 min-height:100%;
-background-image:url(${Color});
+background-image:url(${Color2});
 background-size:100% 100%;
 background-repeat:no-repeat;
 background-position:center;
 position: relative;
+background-attachment: fixed;
+@media(max-width:786px){
+  background-attachment: fixed;
+  background-image:url(${Color});
+  background-size:100% 100%;
+}
 @media(min-width:1024px){
   background-attachment: fixed;
 }
