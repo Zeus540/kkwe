@@ -1,6 +1,6 @@
 import React, {Component,Fragment} from 'react';
 import styled from 'styled-components';
-import Color from '../images/tabe.jpg'
+import Color from '../images/t3.jpg'
 import Footer1 from './Footer1'
 import { Link } from "react-scroll";
 
