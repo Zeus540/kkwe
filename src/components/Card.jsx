@@ -9,12 +9,12 @@ padding: 20px;
 background:transparent;
 width:calc(100%/4);
 background:var(--primary-color);
-box-shadow: #202020 18px 15px 24px 2px;
+box-shadow:  0px 1px 24px 0px;
 border-radius:10px;
 &:hover{
     transform:scale(1.05);
     background:var(--Section-color);
-    box-shadow: #202020 18px 15px 24px 2px;
+    box-shadow: coral 0px 1px 24px 0px;
     h4{
         color:var(--secondary-color);
         text-decoration:unset!important;
