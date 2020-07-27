@@ -7,7 +7,8 @@ import { Link } from "react-scroll";
 
 const Container = styled.div`
 width: 100%;
-min-height:100%;
+min-height:100vh;
+max-height:100vh;
 background-image:url(${Color2});
 background-size:100% 100%;
 background-repeat:no-repeat;
