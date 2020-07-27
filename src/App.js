@@ -7,8 +7,7 @@ import ContactMe from './components/ContactMe.jsx'
 import Footer from './components/Footer.jsx'
 import Events from './components/Events.jsx'
 import Gallery3 from './components/Gallery3.jsx'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 
 

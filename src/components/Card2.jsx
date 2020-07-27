@@ -128,7 +128,7 @@ class Card extends Component {
       }
     render() {
     return (        
-        <Container data-aos='fade-left'>
+        <Container data-aos='fade-up'>
             <Heading>
                {this.props.name}
             </Heading>

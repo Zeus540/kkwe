@@ -98,15 +98,7 @@ padding:30px 5px;
 justify-content:center;
 color: white;
 `
-const Anchor=styled.a`
-text-decoration:none;
-color:white;
 
-&:hover{
-    color:var(--secondary-color);
-  
-  }
-`
 
 const ContainerInner=styled.div`
     display:flex;

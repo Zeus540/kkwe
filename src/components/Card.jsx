@@ -92,16 +92,20 @@ const Des= styled.p`
     text-align:left; 
 `
 
+const Block = styled.div`
+
+`
 
 class Card extends Component {
     componentDidMount(){
         AOS.init({
-          duration : 3000
+          duration : 2000
         })
       }
     render() {
     return (        
-        <Container data-aos='fade-right'>
+        <Container >
+            <Block data-aos='fade-up'>
             <Heading>
                {this.props.name}
             </Heading>
@@ -125,6 +129,7 @@ class Card extends Component {
                 <Des>{this.props.message3}</Des>
               
             </Text>
+            </Block>
         </Container>  
         );
     }

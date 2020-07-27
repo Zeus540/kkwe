@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import Parallax from './Parallax.jsx'
 import Un from '../images/tabemobi.jpg'
 import Un2 from '../images/tabe.jpg'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Container = styled.div`
@@ -45,7 +46,7 @@ padding: 5px 5px;
 text-align: center;
 `
 
-const Holder= styled.div`
+const Holder = styled.div`
 margin:0 auto;
 text-align:center;
 display:flex;
@@ -53,11 +54,17 @@ padding:30px 5px;
 justify-content:center;
 color: white;
 `
+const Block = styled.div`
 
+`
 
 
 class Gallery extends Component {
-  
+  componentDidMount(){
+    AOS.init({
+      duration : 2000
+    })
+  }
   render() {
     
 
@@ -67,11 +74,12 @@ class Gallery extends Component {
      
         <Container id="Weddings">
           <Overlay>
+          <Block data-aos='fade-up'>
           <Holder className="headings">
            <i class="fa fa-bell-o"></i><Heading className="headings">Wedding Packages</Heading>
            <i class="fa fa-bell-o"></i>
            </Holder>
-      
+           </Block>
             
             <Parallax/>
                 </Overlay>
