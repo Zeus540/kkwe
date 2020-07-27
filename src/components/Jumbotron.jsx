@@ -234,7 +234,7 @@ class Jumbotron extends Component {
               to="Skills"
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-110}
               duration= {500}>
                 <Btn>WEDDINGS & PACKAGES</Btn></Link>
               <Link
@@ -242,7 +242,7 @@ class Jumbotron extends Component {
               to="ContactMe"
               spy={true}
               smooth={true}
-              offset={-10}
+              offset={-20}
               duration= {500}>
                 <Btn>GET A QOUTE</Btn></Link>
             </BtnGroup>
