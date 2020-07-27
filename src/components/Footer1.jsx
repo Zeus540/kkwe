@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Container = styled.div`
 background-color:var(--Section-color);
@@ -19,14 +21,17 @@ margin:15px 5px;
   
   }
 `
-const Hide = styled.a`
 
-`
 class Footer extends Component {
+    componentDidMount(){
+        AOS.init({
+          duration : 2000
+        })
+      }
     render() { 
         return ( 
            
-            <Container>
+            <Container data-aos='fade-up'>
                       
                            
                                

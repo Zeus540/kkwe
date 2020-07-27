@@ -3,7 +3,8 @@ import styled from "styled-components";
 import Forms from "./form.jsx";
 import Un from '../images/tabemobi.jpg'
 import Un2 from '../images/tabe.jpg'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Container=styled.main`
     background-image:url(${Un2});
@@ -133,27 +134,37 @@ const FormContainer=styled.div`
     width:Calc(100%/3);
 }
 `
+const Block = styled.div`
 
+`
 
 
 class ContactMe extends Component {
-    
+    componentDidMount(){
+        AOS.init({
+          duration : 2000
+        })
+      }
 render() { 
     return (
         
            <Container id="ContactMe" className="overlay">
                <Container1 >
+               <Block data-aos='fade-up'>
                <Holder className="headings">
-          <i class="fa fa-bell-o"></i><Heading className="headings">GET IN TOUCH</Heading>
-          <i class="fa fa-bell-o"></i>
+            <i class="fa fa-bell-o"></i><Heading className="headings">GET IN TOUCH</Heading><i class="fa fa-bell-o"></i>
            </Holder>
+           </Block>
                <ContainerInner>
              
                    <Textcontainer>
+                <Block data-aos='fade-up'>
                 <Text >
                 Let’s meet for your free consultation, <br/> whether on Skype or in person at your favourite coffee spot. <br/> Bring along your thoughts, ideas and wishes as I would love to find out about you! <br/> Only Cape Town clients will be met in person. <br/><br/>
                 Please reach out to me by completing the below form, <br/> I will get back to your soonest. 
                </Text>
+               </Block>
+               <Block data-aos='fade-up'>
                <Text >
                Get in touch with me <br/>
                <br/>
@@ -161,12 +172,14 @@ render() {
                 &nbsp;
                 <Box><i class="fa fa-phone" alt="telephone"></i>&nbsp;&nbsp;084 716 2672 </Box>
                </Text>
-
+               </Block>
                </Textcontainer>
                &nbsp;
-               <FormContainer >
+              
+               <FormContainer  data-aos='fade-up'>
                     <Forms/>
                </FormContainer>
+               
                </ContainerInner>
                </Container1>
            </Container>

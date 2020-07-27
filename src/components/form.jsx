@@ -119,7 +119,7 @@ class Forms extends Component {
 						<Textarea name="comments" id="comments" placeholder="Message" rows="15" cols="50" ></Textarea>
 
                         <Label htmlFor="verify">Verify</Label>
-                        &nbsp;
+                        
 						<Validate name="verify" type="text" id="verify" placeholder="How much is 3 + 1 =" />
                        
                         <br/>

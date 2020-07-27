@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import {Link} from "react-scroll";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Navbar = styled.div`
 width: 100%;
@@ -71,21 +72,29 @@ height:auto;
   }
   
 }
-
-    
 `
 
-class Nav extends Component {
+const Block = styled.div`
 
+`
+
+
+class Nav extends Component {
+  componentDidMount(){
+    AOS.init({
+      duration : 2000
+    })
+  }
 render() { 
 
 
         return (
+         
       <Navbar >
         
-        
+        <Block >
       <List>
-      
+      <Block data-aos='fade-down'>
         <Link 
           activeClass="active"
           to="Home"
@@ -94,8 +103,10 @@ render() {
           offset={0}
           duration= {250}
           ><ListItem >Home</ListItem>
+          
         </Link>
-        
+        </Block>
+        <Block data-aos='fade-down'>
         <Link
           activeClass="active"
           to="AboutUs"
@@ -105,8 +116,9 @@ render() {
           duration= {250}
           ><ListItem >About Us</ListItem>
         </Link>  
-        
-        
+        </Block>
+
+        <Block data-aos='fade-down'>
         <Link
           activeClass="active"
           to="Weddings"
@@ -116,9 +128,9 @@ render() {
           duration= {250}
           ><ListItem >Packages</ListItem>
         </Link>
-        
+        </Block>
       
-        
+        <Block data-aos='fade-down'>
         <Link 
           activeClass="active"
           to="ContactMe"
@@ -128,10 +140,12 @@ render() {
           duration= {250}
           ><ListItem >Contact Me</ListItem>
         </Link>
-        
+        </Block>
    
       </List>
+      </Block>
       </Navbar>
+     
 
   );
   }

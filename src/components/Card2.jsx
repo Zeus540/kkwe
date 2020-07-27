@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Container = styled.div`
 height: inherit;
@@ -119,10 +121,14 @@ const Item= styled.li`
 `
 
 class Card extends Component {
-   
+    componentDidMount(){
+        AOS.init({
+          duration : 2000
+        })
+      }
     render() {
     return (        
-        <Container>
+        <Container data-aos='fade-left'>
             <Heading>
                {this.props.name}
             </Heading>
