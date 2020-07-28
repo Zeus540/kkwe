@@ -104,8 +104,8 @@ class Card extends Component {
       }
     render() {
     return (        
-        <Container >
-            <Block data-aos='fade-up'>
+        <Container  data-aos='fade-up'>
+            
             <Heading>
                {this.props.name}
             </Heading>
@@ -129,7 +129,7 @@ class Card extends Component {
                 <Des>{this.props.message3}</Des>
               
             </Text>
-            </Block>
+           
         </Container>  
         );
     }
