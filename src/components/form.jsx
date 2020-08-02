@@ -102,7 +102,7 @@ class Forms extends Component {
             
            <Container>
               
-                <Form method="post" action="contact.php" name="contactform" id="contactform" class="form c-form">
+                <Form method="post" action="./contact.php" name="contactform" id="contactform" class="form c-form">
                 <Fragment>
             <div id="message" class="c-message"></div>
             </Fragment>
