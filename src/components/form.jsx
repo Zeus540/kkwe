@@ -101,10 +101,11 @@ class Forms extends Component {
         return (
             
            <Container>
-               <Fragment>
+              
+                <Form method="post" action="contact.php" name="contactform" id="contactform" class="form c-form">
+                <Fragment>
             <div id="message" class="c-message"></div>
             </Fragment>
-                <Form method="post" action="contact.php" name="contactform" id="contactform" class="form c-form">
 					<Field>
                         <Label htmlFor="name">Name</Label>
                         
