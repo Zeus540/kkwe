@@ -9,6 +9,7 @@ border-radius:10px;
 color:white;
 display: flex;
 justify-content: center;
+flex-direction:column;  
 @media(max-width:678px){
     margin: 0 auto;
     width: 100%;
@@ -101,11 +102,11 @@ class Forms extends Component {
         return (
             
            <Container>
-              
-                <Form method="post" action="./contact.php" name="contactform" id="contactform" class="form c-form">
-                <Fragment>
+                  <Fragment>
             <div id="message" class="c-message"></div>
             </Fragment>
+                <Form method="post" action="./contact.php" name="contactform" id="contactform" class="form c-form">
+            
 					<Field>
                         <Label htmlFor="name">Name</Label>
                         
