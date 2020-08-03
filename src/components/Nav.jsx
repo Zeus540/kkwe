@@ -53,7 +53,7 @@ height:auto;
   padding:15px 10px;
   font-size:10px;
   &:hover {
-    padding: 15px 30px;
+    padding: 15px 15px;
     background: var(--secondary-color);
     color: var(--Section-color);
     border-radius:0px 0px 0px 10px;
