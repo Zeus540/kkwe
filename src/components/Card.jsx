@@ -12,7 +12,7 @@ background:transparent;
 width:calc(100%/4);
 background:var(--primary-color);
 box-shadow: #202020 18px 15px 24px 2px;
-border-radius:10px;
+
 &:hover{
     transform:scale(1.05);
     background:var(--Section-color);
@@ -78,7 +78,15 @@ transition:ease-in 200ms;
 color:aliceblue;
 
 `
+const Heading5 = styled.h5`
+text-align:center;
+padding:10px;
+padding:20px;
+margin:0px;
+transition:ease-in 200ms;
+color:aliceblue;
 
+`
 
 const Text= styled.div`
     color:aliceblue;
@@ -110,9 +118,9 @@ class Card extends Component {
                {this.props.name}
             </Heading>
             
-            <Heading>
+            <Heading5>
                {this.props.name2}
-            </Heading>
+            </Heading5>
             <Content>
                 <Image  src={this.props.img} alt={this.props.alt}/>
             </Content>

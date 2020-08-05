@@ -29,45 +29,45 @@ background-attachment: fixed;
 const Heading1 = styled.h2`
 color:var(--secondary-color);
 text-align:center;
-margin-top:-10%
+margin-top:-11%
 margin-bottom: 4%;
 width: 100%;
 z-index:0;
-font-size:50px;
+font-size:45px;
 text-transform:uppercase;
 position: fixed;
 @media(max-width:768px) {
-  font-size:50px;
+  font-size:45px;
   position: relative;
  }
 
 @media(max-width:769px) and (orientation: landscape){
-  font-size:50px;
+  font-size:45px;
  }
  
  @media(min-width:769px) and (max-width:1024) and (orientation: landscape){
-   font-size:50px;
+   font-size:45px;
    
  }
  
  @media(min-width:854px) and (max-height:480px) and (orientation: landscape){
  
-   font-size:50px;
+   font-size:45px;
  }
  
  @media(min-width:823px) and (max-height:411px) and (orientation: landscape){
  
-   font-size:50px;
+   font-size:45px;
  }
  
  @media(min-width:812px) and (max-height:375px) and (orientation: landscape){
  
-   font-size:50px;
+   font-size:45px;
  }
  
  @media(min-width:1024px) and (max-height:600px) and (orientation: landscape){
   
-   font-size:50px;
+   font-size:45px;
    
  }
 `
@@ -123,6 +123,12 @@ color:var(--secondary-color);;
 
 `
 
+const Holder = styled.div`
+margin-top:5%
+
+
+`
+
 const InnerContainer = styled.div`
 display:flex;
 justify-content:center;
@@ -137,7 +143,7 @@ background:#00000085;
 
 @media(max-width:769px) and (orientation: landscape){
   height: 100vh;
-  padding-top: 20%;
+  padding-top: 30px;
 }
 
 @media(min-width:769px) and (max-width:1024) and (orientation: landscape){
@@ -182,8 +188,6 @@ color:white;
 font-weight:bold;
 font-size:12px;
 text-transform:uppercase
-
-border-radius:5px;
 &:hover{
   background:var(--secondary-color);
   color:var(--Section-color);
@@ -224,12 +228,18 @@ class Jumbotron extends Component {
     return ( 
         <Container id="Home">
            <InnerContainer >
-             <Fragment>
+             <Holder>
            <Heading1>LOGO HERE</Heading1>
            <Heading>Wedding  <Span>&</Span> Events</Heading>
-        
-           
             <BtnGroup>
+            <Link
+              activeClass="active"
+              to="ContactMe"
+              spy={true}
+              smooth={true}
+              offset={-20}
+              duration= {500}>
+                <Btn>GET A QOUTE</Btn></Link>
             <Link
               activeClass="active"
               to="Skills"
@@ -238,17 +248,9 @@ class Jumbotron extends Component {
               offset={-110}
               duration= {500}>
                 <Btn>WEDDINGS & PACKAGES</Btn></Link>
-              <Link
-              activeClass="active"
-              to="ContactMe"
-              spy={true}
-              smooth={true}
-              offset={-20}
-              duration= {500}>
-                <Btn>GET A QOUTE</Btn></Link>
             </BtnGroup>
            
-            </Fragment>
+            </Holder>
             <Footer1></Footer1>
            </InnerContainer >
         

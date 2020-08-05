@@ -12,7 +12,6 @@ background:transparent;
 width:calc(100%/4);
 background:var(--primary-color);
 box-shadow: #202020 18px 15px 24px 2px;
-border-radius:10px;
 &:hover{
     transform:scale(1.05);
     background:coral;
@@ -68,19 +67,6 @@ border-radius:0px 0px 7px 7px;
     
 }
 `
-const Heading3 = styled.h4`
-text-align:left;
-padding:10px;
-padding:20px;
-margin:0px;
-transition:ease-in 200ms;
-color:aliceblue;
-&:hover{
-    transform:scale(1.2);
-    text-decoration:underline;
-}
-`
-
 const Heading = styled.h4`
 text-align:center;
 padding:10px;
@@ -88,10 +74,16 @@ padding:20px;
 margin:0px;
 transition:ease-in 200ms;
 color:aliceblue;
-&:hover{
-    transform:scale(1.2);
-    text-decoration:underline;
-}
+
+`
+const Heading5 = styled.h5`
+text-align:center;
+padding:10px;
+padding:20px;
+margin:0px;
+transition:ease-in 200ms;
+color:aliceblue;
+
 `
 
 
@@ -132,9 +124,9 @@ class Card extends Component {
             <Heading>
                {this.props.name}
             </Heading>
-            <Heading>
+            <Heading5>
                {this.props.name2}
-            </Heading>
+            </Heading5>
             <Content>
                 <Image src={this.props.img} alt={this.props.alt}/>
             </Content>
@@ -148,7 +140,7 @@ class Card extends Component {
             </Text>
             <br/>
             <Text>
-                <Heading3>{this.props.message3}</Heading3>
+                <Heading>{this.props.message3}</Heading>
             </Text>
             &nbsp;
                 <List>

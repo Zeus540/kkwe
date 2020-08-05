@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Container = styled.div`
 background-color:var(--Section-color);
 display:inline-block;
-border-radius: 0px 10px 0px 0px;
+
 padding: 5px 5px;
 position:absolute;
 bottom:0px;

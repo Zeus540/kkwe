@@ -26,7 +26,7 @@ const List = styled.ul`
 display: flex;
 justify-content:center;
 margin: 0px;
-border-radius: 0px 0px 0px 10px;
+
 align-items: center;
 position: absolute;
        right: 0px;
@@ -56,7 +56,7 @@ height:auto;
     padding: 15px 15px;
     background: var(--secondary-color);
     color: var(--Section-color);
-    border-radius:0px 0px 0px 10px;
+  
     
   }
   
