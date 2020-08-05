@@ -67,7 +67,6 @@ height:auto;
     padding: 15px 40px;
     background: var(--secondary-color);
     color: var(--Section-color);
-    border-radius:0px 0px 0px 10px;
   }
   
 }
