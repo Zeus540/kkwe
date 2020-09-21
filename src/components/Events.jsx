@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import Top from '../images/overleft.png'
 
 const Container = styled.div`
 width:100%;
@@ -10,17 +10,17 @@ justify-content:center;
 align-items:center;
 margin:0 auto;
 height:100%;
-background:var(--secondary-color);
-z-index:1;
+padding-bottom:2%;
+background:#faf2e8;
+z-index:2;
 position:relative;
-
 `
 
 const ContainerInner = styled.div`
 
-color:white;
+color:black;
 line-height:20px;
-display:flex;
+text-align:center;
 margin:0 auto;
 padding: 0px 5% 0% 5%;
 @media(max-width:640px){
@@ -29,34 +29,18 @@ padding: 0px 5% 0% 5%;
 `
 
 const Heading = styled.h2`
-color: var(--secondary-color);
+color:#ac946e;
 margin: 0px;
 text-align: center;
 padding: 5px 5px;
 `
 
 const Box = styled.div`
-background:var(--Section-color);
-`
 
-const Span = styled.span`
-color:var(--secondary-color);
-`
-
-const List= styled.ul`
-    color:aliceblue;
-    line-height:20px;
-    width:100%;
-    text-align:center;
-  @media(max-width:640px){
-    width:100%; 
-    text-align:left;
-   
-}
 `
 
 const Item= styled.li`
-    color:aliceblue;
+color:black;
     list-style:none;
     
     
@@ -69,7 +53,7 @@ const Item= styled.li`
   const Des= styled.p`
   margin:0 auto;
   text-align:center;
-  color: var(--secondary-color);
+  color:#ac946e;
 `
 
 const Holder= styled.div`
@@ -80,7 +64,18 @@ justify-content:center;
 padding:30px 5px;
 color: white;
 `
+
 const Block1 = styled.div`
+
+`
+
+const Image = styled.img`
+position: absolute;
+left: 0px;
+height: 300%;
+z-index: 125;
+display:none;
+bottom:0px;
 
 `
 
@@ -98,57 +93,18 @@ class Events extends Component {
      
         <Container id="Events">
            <Box>
+           <Image src={Top} alt={this.props.alt} />
            <Block1 data-aos='fade-up'>
              <Holder className="headings">
-           <i class="fa fa-bell-o"></i><Heading className="headings">Events</Heading>
-           <i class="fa fa-bell-o"></i>
+           <Heading className="headings">Other Events</Heading>
+       
            </Holder>
            </Block1>
-          <ContainerInner>
-         
-          <List>
-          <Block1 data-aos='fade-up'>
-            <Item><Span>-</Span>&nbsp;&nbsp;Birthday Parties </Item>
-            &nbsp;
-            <Item><Span>-</Span>&nbsp;&nbsp;Gender Reveals </Item>
-            &nbsp;
-            <Item><Span>-</Span>&nbsp;&nbsp;Gala Dinners</Item>
-            &nbsp;
-            </Block1>
-          </List>
-          
-          
-          <List>
-          <Block1 data-aos='fade-up'>
-            <Item><Span>-</Span>&nbsp;&nbsp;Bridal Parties </Item>
-            &nbsp;
-            <Item><Span>-</Span>&nbsp;&nbsp;Graduation Party </Item>
-            &nbsp;
-            <Item><Span>-</Span>&nbsp;&nbsp;Conferencing </Item>
-            &nbsp;
-            </Block1>
-          </List>
-          
-          
-          <List>
-          <Block1 data-aos='fade-up'>
-            <Item><Span>-</Span>&nbsp;&nbsp;Baby Showers / Welcoming</Item>
-            &nbsp;
-            <Item><Span>-</Span>&nbsp;&nbsp;Engagement Parties / Surprises </Item>
-            &nbsp;
-            <Item><Span>-</Span>&nbsp;&nbsp;Launch Party etc. </Item>
-            &nbsp;
-            </Block1>
-          </List>
-          
-          
+          <ContainerInner data-aos='fade-up'>
+          Babyshowers/Gender Reveals • Conferences • Gala Dinners • Graduations • Enagements • Launches • Birthdays
           </ContainerInner>
           
-          <Block>
-          <Block1 data-aos='fade-up'>
-          <Des>Please request a quote for these services below.</Des>
-          </Block1>
-          </Block>
+        
           </Box>
         
         </Container>

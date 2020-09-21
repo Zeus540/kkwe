@@ -21,12 +21,12 @@ z-index:1;
 position:relative;
 @media(max-width:786px){
   background-attachment: fixed;
-  background-image:url(${Un});
+  background-image:url(${Un2});
   background-size:100% 100%;
 }
 `
 const Overlay = styled.div`
-background-color:#1716168c;
+background-color:#f0cfb633!important;
 position:relative;
 margin-top:0%;
 left:0%;
@@ -76,8 +76,8 @@ class Gallery extends Component {
           <Overlay>
           <Block data-aos='fade-up'>
           <Holder className="headings">
-           <i class="fa fa-bell-o"></i><Heading className="headings">Wedding Packages</Heading>
-           <i class="fa fa-bell-o"></i>
+         <Heading className="headings">Wedding Packages</Heading>
+           
            </Holder>
            </Block>
             

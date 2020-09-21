@@ -9,7 +9,7 @@ transition: ease-in 200ms;
 margin:1%;
 padding: 20px;
 background:transparent;
-width:calc(100%/4);
+width:calc(100%/5);
 background:var(--primary-color);
 box-shadow: #202020 18px 15px 24px 2px;
 border-radius:10px;
@@ -99,7 +99,7 @@ const Block = styled.div`
 class Card extends Component {
     componentDidMount(){
         AOS.init({
-          duration : 2000
+          duration : 1000
         })
       }
     render() {

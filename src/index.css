@@ -7,8 +7,8 @@
 }
 :root {
     --primary-color: transparent;
-    --secondary-color: #f18e39;
-    --Section-color: #131425;
+    --secondary-color: #f0cfb6;;
+    --Section-color: #e8a979;
     --Heading-color: red;
     --transparent: transparent;
   }
@@ -118,13 +118,12 @@ body,html {
   font-family: sans-serif;
 height:100%;
 width: 100%;
-
 }
 
 body ,h1 {
   font-family: 'Bebas Neue', arial;
   letter-spacing: 0.15em;
-  background-color: black;
+  background-color: white;
   overflow-x: hidden;
  }
 

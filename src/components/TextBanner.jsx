@@ -2,35 +2,33 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Top from '../images/over.png'
 
 const Container = styled.div`
-background: var(--Section-color);
+background:#faf2e8;
 text-align: center;
-z-index:1;
-position:relative;
+position: relative;
+z-index: 2;
 `
 
 const Heading = styled.h2`
-color: var(--secondary-color);
+color:#ac946e;
 margin: 0px;
 text-align: center;
 padding: 5px 5px;
 `
-const Sub = styled.p`
-color: white;
-margin: 0px;
-text-align: center;
-`
+
 
 const Para = styled.p`
-max-width:90%
-color:white
-text-align:justify
+max-width:70%
+color:black;
+text-align:center;
 display:block
 margin:0 auto;
 padding-bottom:20px;
 @media(max-width:768px){
-  
+  max-width:unset;
+  padding:5%;
 }
 `
 
@@ -45,34 +43,38 @@ color: white;
 const Block = styled.div`
 
 `
+const Image = styled.img`
+position: absolute;
+right: 0px;
+height: 220%;
+z-index: 125;
+display:none;
+`
 
 class TextBanner extends Component {
     componentDidMount(){
         AOS.init({
-          duration : 2000
+          duration : 500
         })
       }
     render(){ 
         return ( 
             <Container id="AboutUs" >
+             
+              <Image data-aos='slide-left'  src={Top} alt={this.props.alt}/>
+       
                  <Block data-aos='fade-up'>
                 <Holder className="headings">
-          <i class="fa fa-bell-o"></i><Heading className="headings">Hello There!</Heading>
-          <i class="fa fa-bell-o"></i>
+          <Heading className="headings">WELCOME TO KWAKUHLE</Heading>
+          
            </Holder>
            </Block>
-           <Block data-aos='fade-up'>
-                <Sub>Welcome to KwaKuhle!</Sub>
-                </Block>
+          
                 <br/>
                 <Block data-aos='fade-up'>
-                <Para>I believe in celebrating life to the fullest, no occasion is too small or too big. I want to assist you in creating the most memorable and beautiful moments by offering my services to achieve this! </Para>
-                </Block>
-                <Block data-aos='fade-up'>
-                <Para>Below you will find the different packages for Wedding Planning as well as the Eventing services that I offer.</Para>
-                </Block>
-                <Block data-aos='fade-up'>
-                <Para>At KwaKuhle, I believe in combining your vision and my experience to deliver a memorable and unique occasion. It would be my absolute pleasure to assist you! </Para>
+                <Para>I believe in celebrating life to the fullest, no occasion is too small or too big. I want to assist you in creating the most memorable and beautiful moments by offering my services to achieve this! 
+                
+                At KwaKuhle, I believe in combining your vision and my experience to deliver a memorable and unique occasion. It would be my absolute pleasure to assist you! </Para>
                 </Block>
                 <br/>
                 <br/>

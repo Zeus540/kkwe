@@ -1,27 +1,29 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 import Forms from "./form.jsx";
-import Un from '../images/tabemobi.jpg'
-import Un2 from '../images/tabe.jpg'
+import Un from '../images/contact.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const Container=styled.main`
-    background-image:url(${Un2});
+const Container=styled.div`
+   background:#ba9d6d;
     background-size:100% 100%;
-    background-attachment:fixed;
     height:100%;
     width:calc(100%/1)
     margin:0px 0px;
     z-index:1;
     position:relative;
+    display:flex;
+    padding-left:5%;
     @media (max-width:425px){
         height:100%;
+        padding:5%;
       }
       @media(max-width:786px){
-        background-attachment: fixed;
-        background-image:url(${Un});
+        flex-direction:column;
         background-size:100% 100%;
+        padding:5%;
+        
       }
       @media (min-width:768px){
         height: 100vh;
@@ -29,27 +31,11 @@ const Container=styled.main`
     
 `
 
-const Container1=styled.div`
-background-color:#1716168c!important;
-position:relative;
-margin-top:0%;
-left:0%;
-top:-0px;
-padding-bottom:5%;
-width:100%;
-height:100%;
 
-@media (max-width:425px){
-  height:100%;
-}
-    
-   
-`
 const Textcontainer=styled.div`
     background-color:var(--transparent);
     height:100%;
-    width:60%;
-    margin:0px 0px;
+   
     @media(max-width:425px){
         width:100%; 
     }
@@ -58,7 +44,7 @@ const Textcontainer=styled.div`
     }
 
     @media(min-width:1024px){
-        width:60%; 
+        width:80%; 
     }
 `
 
@@ -69,6 +55,7 @@ const Text=styled.p`
    
 @media(max-width:425px){
     width:100%; 
+    
 }
 @media(min-width:425px) and  (orientation: landscape){
     width:100%; 
@@ -80,7 +67,9 @@ const Text=styled.p`
 `
 const Box=styled.p`
     text-align:left;
-   
+    @media(max-width:786px){
+        
+      }
 `
 
 
@@ -99,25 +88,9 @@ justify-content:center;
 color: white;
 `
 
-
-const ContainerInner=styled.div`
-    display:flex;
-    padding: 0px 5% 0% 5%;
-
-@media(max-width:768px){
-    display:flex;
-    flex-direction:column;
-}
-@media(min-width:769px){
-   
-   display:flex;
-   flex-direction:row;
-}
-`
-
 const FormContainer=styled.div`
     width:Calc(100%/2);
-    padding:0px 5% 0px 0% ;
+    padding:0px 5% 0px 4% ;
 @media(max-width:768px){
     width:Calc(100%/1);
     padding:0px;
@@ -130,6 +103,67 @@ const Block = styled.div`
 
 `
 
+const HeadingBlock = styled.div`
+
+`
+
+const Left = styled.div`
+width:60%;
+padding-bottom:5%;
+@media(max-width:786px){
+    width:100%;
+    
+  }
+
+`
+
+const Right = styled.div`
+width:40%;
+@media(max-width:786px){
+    display:none;
+    
+  }
+`
+
+const LeftInnerBlock = styled.div`
+width:50%;
+@media(max-width:786px){
+    width:100%;
+    
+  }
+
+`
+
+const RightInnerBlock = styled.div`
+width:50%;
+@media(max-width:786px){
+    width:100%;
+    
+  }
+`
+
+const Flex = styled.div`
+display:flex;
+@media(max-width:786px){
+    display:flex;
+    flex-direction:column;
+    background-size:100% 100%;
+  }
+`
+
+const Img = styled.div`
+height:100%
+position:relative;
+
+`
+const Image = styled.img`
+position:absolute;
+right:0;
+height:100%;
+width:100%;
+
+`
+
 
 class ContactMe extends Component {
     componentDidMount(){
@@ -139,41 +173,53 @@ class ContactMe extends Component {
       }
 render() { 
     return (
-        
+       
            <Container id="ContactMe" className="overlay">
-               <Container1 >
-               <Block data-aos='fade-up'>
-               <Holder className="headings">
-            <i class="fa fa-bell-o"></i><Heading className="headings">GET IN TOUCH</Heading><i class="fa fa-bell-o"></i>
-           </Holder>
-           </Block>
-               <ContainerInner>
-             
-                   <Textcontainer>
-                <Block data-aos='fade-up'>
-                <Text >
-                Let’s meet for your free consultation, <br/> whether on Skype or in person at your favourite coffee spot. <br/> Bring along your thoughts, ideas and wishes as I would love to find out about you! <br/> Only Cape Town clients will be met in person. <br/><br/>
-                Please reach out to me by completing the below form, <br/> I will get back to your soonest. 
-               </Text>
-               </Block>
-               <Block data-aos='fade-up'>
-               <Text >
-               Get in touch with me <br/>
-               <br/>
-                <Box><i class="fa fa-envelope"alt="email"></i>&nbsp;&nbsp;Hello@kkwe.co.za</Box> 
-                &nbsp;
-                <Box><i class="fa fa-phone" alt="telephone"></i>&nbsp;&nbsp;084 716 2672 </Box>
-               </Text>
-               </Block>
-               </Textcontainer>
-               &nbsp;
+               <Left>
+                <HeadingBlock data-aos='fade-up'>
+                
+                <Holder>
+                <Heading>
+                    GET IN TOUCH
+                </Heading>
+                </Holder>
+                </HeadingBlock>
+                <Flex>
+                <LeftInnerBlock>
+                <Textcontainer data-aos='slide-right' >
+                    <Block data-aos='fade-up'>
+                    <Text >
+                    Let’s meet for your free consultation, <br/> whether on Skype or in person at your favourite coffee spot. <br/> Bring along your thoughts, ideas and wishes as I would love to find out about you! <br/> Only Cape Town clients will be met in person. <br/><br/>
+                    Please reach out to me by completing the below form, <br/> I will get back to your soonest. 
+                    </Text>
+                    </Block>
+                    <Block data-aos='fade-up'>
+                    <Text >
+                    Get in touch with me <br/>
+                    <br/>
+                    <Box><i class="fa fa-envelope"alt="email"></i>&nbsp;&nbsp;Hello@kkwe.co.za</Box> 
+                    &nbsp;
+                    <Box><i class="fa fa-phone" alt="telephone"></i>&nbsp;&nbsp;084 716 2672 </Box>
+                    </Text>
+                    </Block>
+                    </Textcontainer>
+                </LeftInnerBlock>
+
+                <RightInnerBlock>
+                <FormContainer  data-aos='fade-up'>
+                <Forms/>
+                </FormContainer>
               
-               <FormContainer  data-aos='fade-up'>
-                    <Forms/>
-               </FormContainer>
-               
-               </ContainerInner>
-               </Container1>
+                </RightInnerBlock>
+                </Flex>
+               </Left>
+
+                <Right>
+                <Img data-aos='slide-left'>
+                <Image src={Un}>
+</Image>
+                </Img>
+                </Right>
            </Container>
          
          );
@@ -181,6 +227,14 @@ render() {
 }
  
 export default ContactMe;
+
+
+
+
+
+
+    
+
 
 
 

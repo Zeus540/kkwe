@@ -38,8 +38,11 @@ min-height:35px;
 margin-bottom:5px;
 margin-top:5px;
 color:aliceblue;
-width:100%;
-border-radius:0px 0px 0px 10px;
+@media(max-width:786px){
+    width:100%;
+    
+  }
+
 `
 
 const Validate =styled.input`
@@ -52,8 +55,10 @@ margin-top:5%;
 margin-bottom:5px;
 color:aliceblue;
 background:transparent;
-width:35%;
-border-radius:0px 0px 0px 10px;
+@media(max-width:786px){
+    width:100%;
+    
+  }
 `
 
 const Submit=styled.input`
@@ -65,7 +70,10 @@ margin-bottom:5px;
 margin-top:10px;
 color:white;
 padding:0px 15px;
-border-radius:10px;
+@media(max-width:786px){
+    width:100%;
+    
+  }
 &:hover{
     background:var(--secondary-color);
     color: var(--Section-color);
@@ -83,12 +91,15 @@ const Textarea =styled.textarea`
 border:none;
 border-left:2px solid var(--secondary-color);
 border-bottom:2px solid var(--secondary-color);
-border-radius:0px 0px 0px 10px;
 margin-bottom:20px;
 margin-top:10px;
 background:transparent;
-width: 100%;
+
 color:white;
+@media(max-width:786px){
+    width:100%;
+    
+  }
 `
 
 const Field =styled.fieldset`
