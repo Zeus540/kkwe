@@ -18,7 +18,7 @@ display:flex;
 
 background-attachment: fixed;
 @media(max-width:786px){
-  background-attachment: fixed;
+  background-attachment: unset;
   background-image:url(${Color});
   background-size:100% 100%;
 }
@@ -32,6 +32,10 @@ display:flex;
 justify-content:center;
 width:100%;
 position: fixed;
+@media(max-width:786px){
+  position: unset;
+
+}
 
 `
 const LogoImage = styled.img`
@@ -50,7 +54,10 @@ width:100%;
 position: fixed;
 margin-top:18%
 margin-bottom: 4%;
+@media(max-width:786px){
+  position: unset;
 
+}
 `
 const Heading = styled.h2`
 color:aliceblue;
