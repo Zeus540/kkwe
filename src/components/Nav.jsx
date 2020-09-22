@@ -23,7 +23,7 @@ display:flex;
 `
 
 const List = styled.ul`
-width: 100vw;
+width: 100%;
 display: flex;
 justify-content:end;
 margin: 0px;
