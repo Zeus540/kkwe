@@ -43,7 +43,10 @@ const LogoImage = styled.img`
 width: 50%;
 display:block;
 margin:0 auto;
+@media(max-width:786px){
+  width: 80%;
 
+}
 
 `
 
@@ -56,7 +59,7 @@ margin-top:18%
 margin-bottom: 4%;
 @media(max-width:786px){
   position: unset;
-
+  margin-top:5%
 }
 `
 const Heading = styled.h2`

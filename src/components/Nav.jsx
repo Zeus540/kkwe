@@ -4,7 +4,7 @@ import {Link} from "react-scroll";
 
 
 const Navbar = styled.div`
-width: 100%;
+width: 100vw;
 border: none;
 border-radius: 0px;
 background:var(--transparent);
