@@ -7,6 +7,9 @@ const Nav = styled.nav`
   padding: 0 20px;
   display: flex;
   justify-content: end;
+  position:fixed;
+  top:0px;
+  z-index:10000;
   @media (max-width: 768px) {
     background:#997d4f;
     height: 0px;

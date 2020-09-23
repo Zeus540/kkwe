@@ -123,7 +123,7 @@ background-color:#f0cfb633!important;
 
 @media(max-width:769px) and (orientation: landscape){
   height: 100vh;
-  padding-top: 20%;
+  
 }
 
 @media(min-width:769px) and (max-width:1024) and (orientation: landscape){
