@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Nav from './components/Nav.jsx'
+import Nav2 from './components/Navbar.jsx'
 import Jumbotron from './components/Jumbotron.jsx'
 import TextBanner from './components/TextBanner.jsx'
 import ContactMe from './components/ContactMe.jsx'
@@ -17,7 +18,7 @@ class App extends React.Component {
     return(
       <div >
        
-        <Nav id="Nav" />
+        <Nav2 id="Nav" />
         <Jumbotron/>
         <TextBanner></TextBanner>  
         <Gallery3/>

@@ -1,4 +1,4 @@
-import React, {Component,Fragment} from 'react';
+import React, {Component} from 'react';
 import styled from 'styled-components';
 import Color from '../images/t2.jpg'
 import Logo from '../images/logo.png'
@@ -39,7 +39,6 @@ position: fixed;
 
 `
 const LogoImage = styled.img`
-
 width: 50%;
 display:block;
 margin:0 auto;
@@ -65,11 +64,13 @@ margin-bottom: 4%;
 const Heading = styled.h2`
 color:aliceblue;
 text-align:center;
-
 z-index:0;
 width: 100%;
 position: fixed;
-
+@media(max-width:1440px) {
+  font-size:20px;
+  position: relative;
+ }
 @media(max-width:768px) {
   font-size:20px;
   position: relative;
@@ -77,6 +78,7 @@ position: fixed;
 
 @media(max-width:769px) and (orientation: landscape){
  font-size:20px;
+ 
 }
 
 @media(min-width:769px) and (max-width:1024) and (orientation: landscape){
@@ -111,6 +113,7 @@ display:flex;
 justify-content:center;
 flex-direction: column;
 height: 100vh;
+width: 100%;
 background-color:#f0cfb633!important;
 @media(min-width:1440px){
   height: 100vh;

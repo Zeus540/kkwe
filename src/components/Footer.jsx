@@ -1,11 +1,11 @@
-import React, { Component,Fragment } from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
 
 const Container = styled.div`
 background-color:#997d4f;
 width:100vw;
-
+padding:1% 0%;
 `
 
 const Copyright = styled.p`
@@ -18,10 +18,6 @@ font-size:12px;
         margin: 0px;
 }
 `
-
-
-
-
 
 class Footer extends Component {
     render() { 

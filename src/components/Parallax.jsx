@@ -22,7 +22,7 @@ width: 100%;
       margin:0 auto;
   }
 @media(min-width:426px) and (max-width:786px){
-     flex-direction:column ;
+     flex-direction:row ;
   flex-wrap: wrap;
     justify-content: center;
     margin:0 auto;

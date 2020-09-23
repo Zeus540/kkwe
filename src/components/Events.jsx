@@ -39,23 +39,6 @@ const Box = styled.div`
 
 `
 
-const Item= styled.li`
-color:black;
-    list-style:none;
-    
-    
-  `
-  const Block= styled.div`
-   width:100%;
-   margin-top:4%;
-   padding-bottom:5%;
-`
-  const Des= styled.p`
-  margin:0 auto;
-  text-align:center;
-  color:#ac946e;
-`
-
 const Holder= styled.div`
 margin:0 auto;
 text-align:center;

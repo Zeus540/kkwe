@@ -19,7 +19,7 @@ const Container=styled.div`
         height:100%;
         padding:5%;
       }
-      @media(max-width:786px){
+      @media(max-width:1440px){
         flex-direction:column;
         background-size:100% 100%;
         padding:5%;
@@ -114,6 +114,10 @@ padding-bottom:5%;
     width:100%;
     
   }
+  @media(max-width:1440px){
+    width:100%;
+    
+  }
 
 `
 
@@ -202,6 +206,8 @@ render() {
                     <Box><i class="fa fa-phone" alt="telephone"></i>&nbsp;&nbsp;084 716 2672 </Box>
                     </Text>
                     </Block>
+                    &nbsp;
+                    &nbsp;
                     </Textcontainer>
                 </LeftInnerBlock>
 
