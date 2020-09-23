@@ -48,7 +48,10 @@ position: absolute;
 right: 0px;
 height: 220%;
 z-index: 125;
-display:none;
+
+@media(max-width:1440px){
+  display:none;
+}
 `
 
 class TextBanner extends Component {

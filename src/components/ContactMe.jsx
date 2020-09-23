@@ -172,7 +172,7 @@ width:100%;
 class ContactMe extends Component {
     componentDidMount(){
         AOS.init({
-          duration : 2000
+          duration : 1000
         })
       }
 render() { 

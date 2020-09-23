@@ -62,7 +62,7 @@ const Block = styled.div`
 class Gallery extends Component {
   componentDidMount(){
     AOS.init({
-      duration : 2000
+      duration : 1000
     })
   }
   render() {

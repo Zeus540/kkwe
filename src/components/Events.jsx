@@ -57,15 +57,17 @@ position: absolute;
 left: 0px;
 height: 300%;
 z-index: 125;
-display:none;
 bottom:0px;
 
+@media(max-width:1440px){
+  display:none;
+}
 `
 
 class Events extends Component {
   componentDidMount(){
     AOS.init({
-      duration : 2000
+      duration : 1000
     })
   }
   
@@ -76,7 +78,7 @@ class Events extends Component {
      
         <Container id="Events">
            <Box>
-           <Image src={Top} alt={this.props.alt} />
+           <Image data-aos='slide-right' src={Top} alt={this.props.alt} />
            <Block1 data-aos='fade-up'>
              <Holder className="headings">
            <Heading className="headings">Other Events</Heading>

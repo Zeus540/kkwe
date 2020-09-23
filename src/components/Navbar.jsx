@@ -10,6 +10,7 @@ const Nav = styled.nav`
   position:fixed;
   top:0px;
   z-index:10000;
+  width:100%;
   @media (max-width: 768px) {
     background:#997d4f;
     height: 0px;
