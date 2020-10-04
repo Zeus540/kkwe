@@ -49,12 +49,25 @@ margin:0 auto;
 
 `
 
+const HeadingBox2 = styled.div`
+display:flex;
+justify-content:center;
+width:100%;
+position: fixed;
+margin-top:15%
+margin-bottom: 4%;
+@media(max-width:786px){
+  position: unset;
+  margin-top:5%
+}
+`
+
 const HeadingBox = styled.div`
 display:flex;
 justify-content:center;
 width:100%;
 position: fixed;
-margin-top:18%
+margin-top:20%
 margin-bottom: 4%;
 @media(max-width:786px){
   position: unset;
@@ -62,6 +75,53 @@ margin-bottom: 4%;
 }
 `
 const Heading = styled.h2`
+color:aliceblue;
+text-align:center;
+z-index:0;
+width: 100%;
+position: fixed;
+@media(max-width:1440px) {
+  font-size:20px;
+  position: relative;
+ }
+@media(max-width:768px) {
+  font-size:20px;
+  position: relative;
+ }
+
+@media(max-width:769px) and (orientation: landscape){
+ font-size:20px;
+ 
+}
+
+@media(min-width:769px) and (max-width:1024) and (orientation: landscape){
+  font-size:20px;
+  
+}
+
+@media(min-width:854px) and (max-height:480px) and (orientation: landscape){
+
+  font-size:20px;
+}
+
+@media(min-width:823px) and (max-height:411px) and (orientation: landscape){
+
+  font-size:20px;
+}
+
+@media(min-width:812px) and (max-height:375px) and (orientation: landscape){
+
+  font-size:20px;
+}
+
+@media(min-width:1024px) and (max-height:600px) and (orientation: landscape){
+ 
+  font-size:20px;
+  
+}
+`
+
+const Heading2 = styled.h2`
 color:aliceblue;
 text-align:center;
 z-index:0;
@@ -167,6 +227,10 @@ class Jumbotron extends Component {
              <Logobox>
            <LogoImage src={Logo}/>       
             </Logobox>
+            <HeadingBox2>
+       
+       <Heading2>Bringing beauty to every celebration</Heading2>
+        </HeadingBox2>
             <HeadingBox>
        
            <Heading>CAPE TOWN</Heading>

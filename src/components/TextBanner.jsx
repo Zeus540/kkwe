@@ -35,6 +35,16 @@ padding-bottom:20px;
 const Holder= styled.div`
 margin:0 auto;
 text-align:center;
+
+padding:30px 0px 0px 0px;
+justify-content:center;
+color: white;
+`
+
+
+const Holder2= styled.div`
+margin:0 auto;
+text-align:center;
 display:flex;
 padding:30px 5px;
 justify-content:center;
@@ -68,16 +78,22 @@ class TextBanner extends Component {
        
                  <Block data-aos='fade-up'>
                 <Holder className="headings">
-          <Heading className="headings">WELCOME TO KWAKUHLE</Heading>
-          
+          <Heading className="headings">Welcome</Heading>
+          <Heading>What a pleasure it is to meet you here.</Heading>
            </Holder>
+
+   
+         
+          
+
            </Block>
           
                 <br/>
                 <Block data-aos='fade-up'>
-                <Para>I believe in celebrating life to the fullest, no occasion is too small or too big. I want to assist you in creating the most memorable and beautiful moments by offering my services to achieve this! 
-                
-                At KwaKuhle, I believe in combining your vision and my experience to deliver a memorable and unique occasion. It would be my absolute pleasure to assist you! </Para>
+                  
+                <Para>
+                At KwaKuhle, we believe your wedding day should be ALL about you and your partner, and the love you share for each other. We will ensure that your wedding celebrations are as magical as you envision it to be, with all the fun, laughter, tears, romance and excitement. So whether you’re just recently engaged or a few months into your wedding planning process, we’ve got a celebration package to suit your needs as you step into the next chapter of your lives.
+                </Para>
                 </Block>
                 <br/>
                 <br/>

@@ -86,7 +86,7 @@ class Events extends Component {
            </Holder>
            </Block1>
           <ContainerInner data-aos='fade-up'>
-          Babyshowers/Gender Reveals • Conferences • Gala Dinners • Graduations • Enagements • Launches • Birthdays
+          Proposal Planning – Baby Showers – Gender Reveals – Conferences – Gala Dinners – Graduation Celebrations – Engagements – Launches – Birthdays
           </ContainerInner>
           
         

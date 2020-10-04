@@ -193,17 +193,21 @@ render() {
                 <Textcontainer data-aos='slide-right' >
                     <Block data-aos='fade-up'>
                     <Text >
-                    Let’s meet for your free consultation, <br/> whether on Skype or in person at your favourite coffee spot. <br/> Bring along your thoughts, ideas and wishes as I would love to find out about you! <br/> Only Cape Town clients will be met in person. <br/><br/>
-                    Please reach out to me by completing the below form, <br/> I will get back to your soonest. 
+                    Let’s get the conversation started
+                    </Text>
+                    <br/>
+                    <Text >
+                    Tell us your love story over a cup of coffee (for our Cape Town based clients) or online. We want to get to know you both, hear all about your journey together and everything you envision for your special day. Let’s chat through your ideas and wishes, so that we can bring your visions to life.
                     </Text>
                     </Block>
+                    <br/>
                     <Block data-aos='fade-up'>
                     <Text >
                     Get in touch with me <br/>
                     <br/>
                     <Box><i class="fa fa-envelope"alt="email"></i>&nbsp;&nbsp;Hello@kkwe.co.za</Box> 
                     &nbsp;
-                    <Box><i class="fa fa-phone" alt="telephone"></i>&nbsp;&nbsp;084 716 2672 </Box>
+                    <Box><i class="fa fa-phone" alt="telephone"></i>&nbsp;&nbsp;084 716 2672</Box>
                     </Text>
                     </Block>
                     &nbsp;

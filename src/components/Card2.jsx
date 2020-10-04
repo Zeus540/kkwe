@@ -71,14 +71,20 @@ border-radius:0px 0px 7px 7px;
 
 const Heading = styled.h4`
 text-align:center;
-padding:10px;
-padding:20px;
+padding:20px 0px 0px 0px;
 margin:0px;
 transition:ease-in 200ms;
 color:aliceblue;
 
 `
+const Heading2 = styled.p`
+text-align:center;
+padding:20px 0px 20px 0px;
+margin:0px;
+transition:ease-in 200ms;
+color:aliceblue;
 
+`
 
 const Text= styled.div`
     color:aliceblue;
@@ -90,6 +96,7 @@ const Des= styled.p`
     color:aliceblue;
     text-decoration:none;
     text-align:center;
+    transition:ease-in 200ms;
 `
 
 
@@ -103,14 +110,18 @@ class Card extends Component {
     render() {
     return (        
         <Container data-aos='fade-up'>
-           <br/>
+          
+            <Heading>
+               {this.props.name}
+            </Heading>
+            <br/>
             <Content>
                 <Image src={this.props.img} alt={this.props.alt}/>
             </Content>
             <br/>
-            <Heading>
-               {this.props.name}
-            </Heading>
+            <Heading2>
+               {this.props.name2}
+            </Heading2>
             <Text>
                 <Des>{this.props.message}</Des>
             </Text>
