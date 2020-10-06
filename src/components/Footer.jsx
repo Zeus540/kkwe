@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 const Container = styled.div`
 background-color:#997d4f;
+padding:20px;
 
-padding:1% 0%;
 `
 
 const Copyright = styled.p`

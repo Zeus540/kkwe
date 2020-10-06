@@ -77,12 +77,13 @@ transition:ease-in 200ms;
 color:aliceblue;
 
 `
-const Heading2 = styled.p`
+const Heading2 = styled.h4`
 text-align:center;
 padding:20px 0px 20px 0px;
 margin:0px;
 transition:ease-in 200ms;
 color:aliceblue;
+font-size:14px!important;
 
 `
 

@@ -52,13 +52,17 @@ const Block1 = styled.div`
 
 `
 
+const Text = styled.p`
+
+`
+
 const Image = styled.img`
 position: absolute;
 left: 0px;
 height: 300%;
 z-index: 125;
 bottom:0px;
-
+display:none;
 @media(max-width:1440px){
   display:none;
 }
@@ -86,7 +90,7 @@ class Events extends Component {
            </Holder>
            </Block1>
           <ContainerInner data-aos='fade-up'>
-          Proposal Planning – Baby Showers – Gender Reveals – Conferences – Gala Dinners – Graduation Celebrations – Engagements – Launches – Birthdays
+          <Text>Proposal Planning – Baby Showers – Gender Reveals – Conferences – Gala Dinners – Graduation Celebrations – Engagements – Launches – Birthdays</Text>
           </ContainerInner>
           
         

@@ -47,6 +47,7 @@ const ListItem = styled.li`
 list-style:none;
 color:white;
 margin:0px 0px
+
 transition: ease-in 200ms;
 height:auto;
 text-transform:uppercase;

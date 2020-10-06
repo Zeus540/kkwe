@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import Parallax from './Parallax.jsx'
 import Un from '../images/tabemobi.jpg'
-import Un2 from '../images/tabe.jpg'
+import Un2 from '../images/middle.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

@@ -1,9 +1,9 @@
 import React, {useState,Fragment} from 'react';
 import styled from 'styled-components';
 import Card2 from './Card2.jsx' 
-import Card1img from '../images/icon1.png'
-import Card2img from '../images/icon2.png'
-import Card3img from '../images/icon3.png'
+import Card1img from '../images/1.png'
+import Card2img from '../images/2.png'
+import Card3img from '../images/3.png'
 
 const Container = styled.div`
 padding:0px;
@@ -32,7 +32,7 @@ width: 100%;
 function Parallax() {
  
   const [State] = useState([
-    {name:"Blooming Bachelorette",name2:"Officially a fiancé… Let’s get this party started!", message:"Before a bachelorette blooms into the beautiful bride, a celebration must be had. A bachelorette party is a very special moment in every woman’s life. We celebrate the woman you were, and are becoming. It’s a coming together of your nearest and dearest to relax, let go of the pre-wedding stress and just have some FUN. Whether it’s champagne and massages, or a night out on the town, we can help your entourage make it a night to remember.", img:Card2img,  alt:"image"},
+    {name:"Blooming Bachelorette",name2:"Officially a fiancé… Let’s get this party started!", message:"Before a bachelorette blooms into the beautiful bride, a celebration must be had. A bachelorette party is a very special moment in every woman’s life. We celebrate the woman you were, and are becoming. It’s a coming together of your nearest and dearest to relax, let go of the pre-wedding stress and just have some FUN. Whether it’s champagne and massages, or a night out on the town, we can help your entourage make it a night to remember.", img:Card1img,  alt:"image"},
   ]);
 
   const [State2] = useState([
@@ -40,7 +40,7 @@ function Parallax() {
   ]);
 
    const [State3] = useState([
-    {name:"Delicate Daisy",name2:"The A Team’s very own support team", message:"The Delicate Daisy experience is for the couple who are on it. Your wedding planning process is well underway, with your venue and service providers booked and ready to go. This is where we step in. We would meet a month before your wedding date for a complete hand-over, ensuring you and your fiancé can kick back, relax and enjoy the next month, as we smooth-sail right into your wedding day.", img:Card2img,  alt:"image"},
+    {name:"Delicate Daisy",name2:"The A Team’s very own support team", message:"The Delicate Daisy experience is for the couple who are on it. Your wedding planning process is well underway, with your venue and service providers booked and ready to go. This is where we step in. We would meet a month before your wedding date for a complete hand-over, ensuring you and your fiancé can kick back, relax and enjoy the next month, as we smooth-sail right into your wedding day.", img:Card3img,  alt:"image"},
   ]);
 
 return(

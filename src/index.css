@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'), url(./fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+
+}
+@font-face {
+   
+    font-family: 'Grovanne';
+    src: local('Grovanne'), url(./fonts/Grovanne/font.woff) format('truetype');
+}
+   
 .alice-carousel__dots {
     margin: 30px 3px 5px;
     padding: 0;
@@ -110,9 +121,7 @@ input, select {
 
 body,html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: Poppins, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: sans-serif;
@@ -122,7 +131,7 @@ width: 100%;
 }
 
 body ,h1 {
-  font-family: 'Bebas Neue', arial;
+    font-family: Grovanne, serif;
   letter-spacing: 0.15em;
   background-color: white;
   overflow-x: hidden;

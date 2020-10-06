@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import Color from '../images/t2.jpg'
+import Color from '../images/top.jpg'
 import Logo from '../images/logo.png'
 import Footer1 from './Footer1'
 
