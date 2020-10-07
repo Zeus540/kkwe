@@ -18,9 +18,7 @@ background-size:100% 100%;
 z-index:1;
 position:relative;
 @media(max-width:786px){
-  background-attachment: fixed;
-  background-image:url(${Un2});
-  background-size:100% 100%;
+  background:#ba9d6d;
 }
 `
 const Overlay = styled.div`
