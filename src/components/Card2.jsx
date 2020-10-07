@@ -8,9 +8,8 @@ height: inherit;
 transition: ease-in 200ms;
 margin:2.5%;
 padding: 20px;
-background:transparent;
 width:calc(100%/6);
-background:#faf2e882;
+background:#faf2e8;
 box-shadow: #faf2e8 18px 15px 24px 2px;
 &:hover{
     transform:scale(1.05);
