@@ -1,10 +1,9 @@
 @font-face {
     font-family: 'Poppins';
     src: local('Poppins'), url(./fonts/Poppins/Poppins-Regular.ttf) format('truetype');
-
 }
+
 @font-face {
-   
     font-family: 'Grovanne';
     src: local('Grovanne'), url(./fonts/Grovanne/font.woff) format('truetype');
 }
@@ -16,13 +15,14 @@
     text-align: center;
     display: none;
 }
+
 :root {
     --primary-color: transparent;
     --secondary-color: #f0cfb6;;
     --Section-color: #e8a979;
     --Heading-color: red;
     --transparent: transparent;
-  }
+}
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

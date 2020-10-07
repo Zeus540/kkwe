@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Parallax from './Parallax.jsx'
-import Un from '../images/tabemobi.jpg'
 import Un2 from '../images/middle.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 
 const Container = styled.div`
 width:100%;
@@ -54,10 +52,10 @@ padding:30px 5px;
 justify-content:center;
 color: white;
 `
+
 const Block = styled.div`
 
 `
-
 
 class Gallery extends Component {
   componentDidMount(){
@@ -66,23 +64,16 @@ class Gallery extends Component {
     })
   }
   render() {
-    
-
-
     return (
-      
-     
         <Container id="Weddings">
           <Overlay>
           <Block data-aos='fade-up'>
           <Holder className="headings">
-         <Heading className="headings">Wedding Packages</Heading>
-           
-           </Holder>
-           </Block>
-            
-            <Parallax/>
-                </Overlay>
+            <Heading className="headings">Wedding Packages</Heading>
+          </Holder>
+          </Block>
+          <Parallax/>
+          </Overlay>
         </Container>
      
     );
