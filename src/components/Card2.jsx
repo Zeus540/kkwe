@@ -11,7 +11,7 @@ padding: 20px;
 width:calc(100%/6);
 background:#e6cdad;
 background:#faf2e882;
-box-shadow: #faf2e8 18px 15px 24px 2px;
+
 &:hover{
     transform:scale(1.05);
     background:#faf2e8;
