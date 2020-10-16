@@ -163,7 +163,7 @@ position:relative;
 const Image = styled.img`
 position:absolute;
 right:0;
-height:100%;
+min-height:100%;
 width:100%;
 
 `
