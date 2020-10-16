@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 import Forms from "./form.jsx";
-import Un from '../images/contact.png'
+import Un from '../images/contact.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
