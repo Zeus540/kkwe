@@ -94,7 +94,6 @@ border-bottom:2px solid var(--secondary-color);
 margin-bottom:20px;
 margin-top:10px;
 background:transparent;
-
 color:white;
 @media(max-width:786px){
     width:100%;
@@ -129,7 +128,7 @@ class Forms extends Component {
                         &nbsp;
                         <Label htmlFor="comments">Message</Label>
                         &nbsp;  
-						<Textarea name="comments" id="comments" placeholder="Message" rows="15" cols="50" ></Textarea>
+						<Textarea name="comments" id="comments" placeholder="Message" rows="8" cols="50" ></Textarea>
 
                         <Label htmlFor="verify">Verify</Label>
                         

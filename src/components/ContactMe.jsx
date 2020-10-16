@@ -109,7 +109,7 @@ const HeadingBlock = styled.div`
 
 const Left = styled.div`
 width:60%;
-padding-bottom:5%;
+padding-bottom:2%;
 @media(max-width:786px){
     width:100%;
     
@@ -164,7 +164,7 @@ const Image = styled.img`
 position:absolute;
 right:0;
 height:100%;
-width:100%;
+width:90%;
 
 `
 
