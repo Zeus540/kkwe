@@ -148,7 +148,7 @@ justify-content:center;
 flex-direction: column;
 height: 100vh;
 width: 100%;
-background-color:#f0cfb633!important;
+background-color:#5b4c4080!important;
 @media(min-width:1440px){
   height: 100vh;
 }

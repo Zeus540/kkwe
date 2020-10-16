@@ -24,8 +24,8 @@ class Footer extends Component {
     render() { 
         return (
             <Container>
-                <Anchor href="https://www.facebook.com" class="icon" alt="instagram"><i class="fa fa-instagram" alt="instagram"></i></Anchor>
-                <Anchor href="https://www.facebook.com" class="icon" alt="facebook"><i class="fa fa-facebook-square" alt="facebook"></i></Anchor>
+                <Anchor href="https://www.instagram.com/kkwecpt" class="icon" alt="instagram" target="_blank" ><i class="fa fa-instagram" alt="instagram"></i></Anchor>
+                <Anchor href="https:/www.facebook.com/kkwecpt" class="icon" alt="facebook" target="_blank" ><i class="fa fa-facebook-square" alt="facebook"></i></Anchor>
             </Container>
          );
     }

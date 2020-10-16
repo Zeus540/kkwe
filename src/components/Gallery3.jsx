@@ -22,7 +22,7 @@ position:relative;
 }
 `
 const Overlay = styled.div`
-background-color:#f0cfb633!important;
+background-color:#5b4c4080!important;
 position:relative;
 margin-top:0%;
 left:0%;
