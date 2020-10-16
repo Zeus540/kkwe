@@ -8,7 +8,7 @@ import 'aos/dist/aos.css';
 const Container=styled.div`
    background:#ba9d6d;
     background-size:100% 100%;
-    height:100%;
+    min-height:100%;
     width:calc(100%/1)
     margin:0px 0px;
     z-index:1;
