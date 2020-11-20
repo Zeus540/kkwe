@@ -6,45 +6,45 @@ import 'aos/dist/aos.css';
 const Container = styled.div`
 height: inherit;
 transition: ease-in 200ms;
-margin:1%;
+margin:2.5%;
 padding: 20px;
-background:transparent;
-width:calc(100%/4);
-background:var(--primary-color);
-box-shadow: #202020 18px 15px 24px 2px;
-border-radius:10px;
+width:calc(100%/6);
+background:#e6cdad;
+background:#faf2e882;
+
 &:hover{
     transform:scale(1.05);
-    background:coral;
-    box-shadow: #202020 18px 15px 24px 2px;
+    background:#faf2e8;
+    box-shadow: #997d4f 18px 15px 24px 2px;
     h4{
-        color:var(--Section-color);
+        color:#997d4f;
+        text-decoration:unset!important;
+    }
+    p{
+        color:black;
         text-decoration:unset!important;
     }
 }
-@media(max-width:425px){
+@media(max-width:426px) {
     width:calc(100%/1.5);
     margin: 0 auto;
     margin-bottom:15%;
 }
-@media(min-width:426px) and (max-width:559px){
-    width:calc(100%/2.5);
+@media(min-width:426px) and (max-width:768px){
+    width:calc(100%/2.8);
     margin: 0 auto;
     margin-bottom:15%;
 }
-
-
-
-@media(min-width:559px) and (max-width:1024px)  {
+@media(min-width:768px) and (max-width:1440px){
     width:calc(100%/3);
-    margin-bottom:2%;
-    margin: 0 auto;
+    margin: 0 4.5;
+    margin-bottom:5%;
 }
 
-@media(min-width:426px) and (max-width:768px)  {
-    width:calc(100%/2);
-    margin-bottom:2%;
-    margin: 0 auto;
+@media(min-width:788px){
+    width:calc(100%/5);
+    
+
 }
 `
 
@@ -68,96 +68,65 @@ border-radius:0px 0px 7px 7px;
     
 }
 `
-const Heading3 = styled.h4`
-text-align:left;
-padding:10px;
-padding:20px;
-margin:0px;
-transition:ease-in 200ms;
-color:aliceblue;
-&:hover{
-    transform:scale(1.2);
-    text-decoration:underline;
-}
-`
 
 const Heading = styled.h4`
 text-align:center;
-padding:10px;
-padding:20px;
+padding:20px 0px 0px 0px;
 margin:0px;
 transition:ease-in 200ms;
 color:aliceblue;
-&:hover{
-    transform:scale(1.2);
-    text-decoration:underline;
-}
-`
 
+`
+const Heading2 = styled.h4`
+text-align:center;
+padding:20px 0px 20px 0px;
+margin:0px;
+transition:ease-in 200ms;
+color:aliceblue;
+font-size:14px!important;
+
+`
 
 const Text= styled.div`
     color:aliceblue;
     text-decoration:none;
-    text-align:left; 
+    text-align:center;
 `
 
 const Des= styled.p`
     color:aliceblue;
     text-decoration:none;
-    text-align:left; 
+    text-align:center;
+    transition:ease-in 200ms;
 `
 
-const List= styled.ul`
-    color:aliceblue;
-    line-height:20px;
-    padding-left:15%;
-  
-`
-const Item= styled.li`
-    color:aliceblue;
-    width:80%;
-    padding-left:10px;
 
-`
 
 class Card extends Component {
     componentDidMount(){
         AOS.init({
-          duration : 2000
+          duration : 1000
         })
       }
     render() {
     return (        
         <Container data-aos='fade-up'>
+          
             <Heading>
                {this.props.name}
             </Heading>
-            <Heading>
-               {this.props.name2}
-            </Heading>
+            <br/>
             <Content>
                 <Image src={this.props.img} alt={this.props.alt}/>
             </Content>
             <br/>
+            <Heading2>
+               {this.props.name2}
+            </Heading2>
             <Text>
                 <Des>{this.props.message}</Des>
             </Text>
             <br/>
-            <Text>
-                <Des>{this.props.message2}</Des>
-            </Text>
-            <br/>
-            <Text>
-                <Heading3>{this.props.message3}</Heading3>
-            </Text>
-            &nbsp;
-                <List>
-                    <Item><Des>{this.props.item1}</Des></Item>
-                    &nbsp;
-                    <Item><Des>{this.props.item2}</Des></Item>
-                    &nbsp;
-                    <Item><Des>{this.props.item3}</Des></Item>
-                </List>
         </Container>  
         );
     }

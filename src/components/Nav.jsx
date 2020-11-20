@@ -4,12 +4,12 @@ import {Link} from "react-scroll";
 
 
 const Navbar = styled.div`
-width: 100%;
+width: 100vw;
 border: none;
 border-radius: 0px;
 background:var(--transparent);
 margin: 0px!important;
-z-index: 2;
+z-index: 200;
 color:var(--primary-color);
 position: fixed;
 height:auto;
@@ -23,14 +23,15 @@ display:flex;
 `
 
 const List = styled.ul`
+width: 100%;
 display: flex;
-justify-content:center;
+justify-content:end;
 margin: 0px;
-border-radius: 0px 0px 0px 10px;
+
 align-items: center;
 position: absolute;
        right: 0px;
-       background: var(--Section-color);
+       background-color:#997d4f;
 @media(min-width:426px){
    
   }
@@ -46,34 +47,43 @@ const ListItem = styled.li`
 list-style:none;
 color:white;
 margin:0px 0px
+
 transition: ease-in 200ms;
 height:auto;
-
+text-transform:uppercase;
+font-size:12px;
 @media(max-width:425px){
   padding:15px 10px;
   font-size:10px;
   &:hover {
     padding: 15px 15px;
-    background: var(--secondary-color);
+
     color: var(--Section-color);
-    border-radius:0px 0px 0px 10px;
+   
     
   }
   
 }
 @media(min-width:426px){
-  padding:15px 10px;
+  padding:20px 10px;
   &:hover {
-    padding: 15px 40px;
-    background: var(--secondary-color);
-    color: var(--Section-color);
-    border-radius:0px 0px 0px 10px;
+    padding: 20px 40px;
+    background:#faf2e8;
+    color:#997d4f;
+    
   }
   
 }
 `
 
+const ListItemline = styled.li`
+list-style:none;
+color:white;
+margin:0px 0px
 
+height:auto;
+
+`
 
 class Nav extends Component {
 
@@ -98,7 +108,10 @@ render() {
           
         </Link>
        
-        
+        &nbsp;
+          <ListItemline >|</ListItemline>
+          &nbsp;
+
         <Link
           activeClass="active"
           to="AboutUs"
@@ -106,9 +119,14 @@ render() {
           smooth={true}
           offset={-40}
           duration= {250}
-          ><ListItem >About Us</ListItem>
+          ><ListItem >ABOUT</ListItem>
         </Link>  
-   
+          
+
+          &nbsp;
+          <ListItemline >|</ListItemline>
+          &nbsp;
+
         <Link
           activeClass="active"
           to="Weddings"
@@ -119,6 +137,10 @@ render() {
           ><ListItem >Packages</ListItem>
         </Link>
 
+        &nbsp;
+          <ListItemline >|</ListItemline>
+          &nbsp;
+
         <Link 
           activeClass="active"
           to="ContactMe"
@@ -126,7 +148,7 @@ render() {
           smooth={true}
           offset={-40}
           duration= {250}
-          ><ListItem >Contact Me</ListItem>
+          ><ListItem >Contact</ListItem>
         </Link>
        
    

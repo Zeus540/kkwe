@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Parallax from './Parallax.jsx'
-import Un from '../images/tabemobi.jpg'
-import Un2 from '../images/tabe.jpg'
+import Un2 from '../images/middle.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 
 const Container = styled.div`
 width:100%;
@@ -20,13 +18,11 @@ background-size:100% 100%;
 z-index:1;
 position:relative;
 @media(max-width:786px){
-  background-attachment: fixed;
-  background-image:url(${Un});
-  background-size:100% 100%;
+  background:#ba9d6d;
 }
 `
 const Overlay = styled.div`
-background-color:#1716168c;
+background-color:#5b4c4080!important;
 position:relative;
 margin-top:0%;
 left:0%;
@@ -54,35 +50,28 @@ padding:30px 5px;
 justify-content:center;
 color: white;
 `
+
 const Block = styled.div`
 
 `
 
-
 class Gallery extends Component {
   componentDidMount(){
     AOS.init({
-      duration : 2000
+      duration : 1000
     })
   }
   render() {
-    
-
-
     return (
-      
-     
         <Container id="Weddings">
           <Overlay>
           <Block data-aos='fade-up'>
           <Holder className="headings">
-           <i class="fa fa-bell-o"></i><Heading className="headings">Wedding Packages</Heading>
-           <i class="fa fa-bell-o"></i>
-           </Holder>
-           </Block>
-            
-            <Parallax/>
-                </Overlay>
+            <Heading className="headings">Wedding Packages</Heading>
+          </Holder>
+          </Block>
+          <Parallax/>
+          </Overlay>
         </Container>
      
     );

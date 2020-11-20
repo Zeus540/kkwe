@@ -2,85 +2,87 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Top from '../images/over.png'
 
 const Container = styled.div`
-background: var(--Section-color);
+background:#faf2e8;
 text-align: center;
-z-index:1;
-position:relative;
+position: relative;
+z-index: 2;
 `
 
 const Heading = styled.h2`
-color: var(--secondary-color);
+color:#ac946e;
 margin: 0px;
 text-align: center;
 padding: 5px 5px;
 `
-const Sub = styled.p`
-color: white;
-margin: 0px;
-text-align: center;
-`
+
 
 const Para = styled.p`
-max-width:90%
-color:white
-text-align:justify
+max-width:70%
+color:black;
+text-align:center;
 display:block
 margin:0 auto;
 padding-bottom:20px;
 @media(max-width:768px){
-  
+  max-width:unset;
+  padding:5%;
 }
 `
 
 const Holder= styled.div`
 margin:0 auto;
 text-align:center;
-display:flex;
-padding:30px 5px;
+padding:30px 0px 0px 0px;
 justify-content:center;
 color: white;
 `
+
 const Block = styled.div`
 
+`
+
+const Image = styled.img`
+position: absolute;
+right: 0px;
+height: 220%;
+z-index: 125;
+display:none;
+@media(max-width:1440px){
+  display:none;
+}
 `
 
 class TextBanner extends Component {
     componentDidMount(){
         AOS.init({
-          duration : 2000
+          duration : 500
         })
       }
     render(){ 
         return ( 
-            <Container id="AboutUs" >
-                 <Block data-aos='fade-up'>
+          <Container id="AboutUs" >
+              <Image data-aos='slide-left' src={Top} alt={this.props.alt}/>
+              <Block data-aos='fade-up'>
                 <Holder className="headings">
-          <i class="fa fa-bell-o"></i><Heading className="headings">Hello There!</Heading>
-          <i class="fa fa-bell-o"></i>
-           </Holder>
-           </Block>
-           <Block data-aos='fade-up'>
-                <Sub>Welcome to KwaKuhle!</Sub>
-                </Block>
+                  <Heading className="headings">Welcome</Heading>
+                  <Heading>What a pleasure it is to meet you here.</Heading>
+                </Holder>
+              </Block>
                 <br/>
-                <Block data-aos='fade-up'>
-                <Para>I believe in celebrating life to the fullest, no occasion is too small or too big. I want to assist you in creating the most memorable and beautiful moments by offering my services to achieve this! </Para>
-                </Block>
-                <Block data-aos='fade-up'>
-                <Para>Below you will find the different packages for Wedding Planning as well as the Eventing services that I offer.</Para>
-                </Block>
-                <Block data-aos='fade-up'>
-                <Para>At KwaKuhle, I believe in combining your vision and my experience to deliver a memorable and unique occasion. It would be my absolute pleasure to assist you! </Para>
-                </Block>
+              <Block data-aos='fade-up'>
+                <Para>
+                At KwaKuhle, we believe your wedding day should be ALL about you and your partner, and the love you share for each other. We will ensure that your wedding celebrations are as magical as you envision it to be, with all the fun, laughter, tears, romance and excitement. So whether you’re just recently engaged or a few months into your wedding planning process, we’ve got a celebration package to suit your needs as you step into the next chapter of your lives.
+                </Para>
+              </Block>
                 <br/>
                 <br/>
             </Container>
         );
     }
 }
- 
 export default TextBanner;
 
 

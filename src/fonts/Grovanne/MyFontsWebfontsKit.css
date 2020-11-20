@@ -1,0 +1,105 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3950003, 2020-09-21T03:02:16-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Grovana-Light by Larin Type Co
+ * URL: https://www.myfonts.com/fonts/larin-type-co/grovana/light/
+ * 
+ * Webfont: Grovana-Regular by Larin Type Co
+ * URL: https://www.myfonts.com/fonts/larin-type-co/grovana/regular/
+ * 
+ * Webfont: Grovana-Medium by Larin Type Co
+ * URL: https://www.myfonts.com/fonts/larin-type-co/grovana/medium/
+ * 
+ * Webfont: Grovana-Bold by Larin Type Co
+ * URL: https://www.myfonts.com/fonts/larin-type-co/grovana/bold/
+ * 
+ * Webfont: Grovana-LightRound by Larin Type Co
+ * URL: https://www.myfonts.com/fonts/larin-type-co/grovana/light-round/
+ * 
+ * Webfont: Grovana-RegularRound by Larin Type Co
+ * URL: https://www.myfonts.com/fonts/larin-type-co/grovana/regular-round/
+ * 
+ * Webfont: Grovana-MediumRound by Larin Type Co
+ * URL: https://www.myfonts.com/fonts/larin-type-co/grovana/medium-round/
+ * 
+ * Webfont: Grovana-BoldRound by Larin Type Co
+ * URL: https://www.myfonts.com/fonts/larin-type-co/grovana/bold-round/
+ * 
+ * Webfont: Grovana-LightRough by Larin Type Co
+ * URL: https://www.myfonts.com/fonts/larin-type-co/grovana/light-rough/
+ * 
+ * Webfont: Grovana-RegularRough by Larin Type Co
+ * URL: https://www.myfonts.com/fonts/larin-type-co/grovana/regular-rough/
+ * 
+ * Webfont: Grovana-MediumRough by Larin Type Co
+ * URL: https://www.myfonts.com/fonts/larin-type-co/grovana/medium-rough/
+ * 
+ * Webfont: Grovana-BoldRough by Larin Type Co
+ * URL: https://www.myfonts.com/fonts/larin-type-co/grovana/bold-rough/
+ * 
+ * 
+ * Webfonts copyright: Pavel Larin
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3c45b3");
+  
+@font-face {
+  font-family: 'Grovana-Light';
+  src: url('webFonts/Grovana-Light/font.woff2') format('woff2'), url('webFonts/Grovana-Light/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Grovana-LightRound';
+  src: url('webFonts/Grovana-LightRound/font.woff2') format('woff2'), url('webFonts/Grovana-LightRound/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Grovana-Medium';
+  src: url('webFonts/Grovana-Medium/font.woff2') format('woff2'), url('webFonts/Grovana-Medium/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Grovana-Regular';
+  src: url('webFonts/Grovana-Regular/font.woff2') format('woff2'), url('webFonts/Grovana-Regular/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Grovana-Bold';
+  src: url('webFonts/Grovana-Bold/font.woff2') format('woff2'), url('webFonts/Grovana-Bold/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Grovana-BoldRound';
+  src: url('webFonts/Grovana-BoldRound/font.woff2') format('woff2'), url('webFonts/Grovana-BoldRound/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Grovana-RegularRough';
+  src: url('webFonts/Grovana-RegularRough/font.woff2') format('woff2'), url('webFonts/Grovana-RegularRough/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Grovana-BoldRough';
+  src: url('webFonts/Grovana-BoldRough/font.woff2') format('woff2'), url('webFonts/Grovana-BoldRough/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Grovana-MediumRough';
+  src: url('webFonts/Grovana-MediumRough/font.woff2') format('woff2'), url('webFonts/Grovana-MediumRough/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Grovana-MediumRound';
+  src: url('webFonts/Grovana-MediumRound/font.woff2') format('woff2'), url('webFonts/Grovana-MediumRound/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Grovana-RegularRound';
+  src: url('webFonts/Grovana-RegularRound/font.woff2') format('woff2'), url('webFonts/Grovana-RegularRound/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Grovana-LightRough';
+  src: url('webFonts/Grovana-LightRough/font.woff2') format('woff2'), url('webFonts/Grovana-LightRough/font.woff') format('woff');
+}
+
