@@ -6,16 +6,16 @@ import 'aos/dist/aos.css';
 const Container = styled.div`
 height: inherit;
 transition: ease-in 200ms;
-margin:2.5%;
+margin:20px;
 padding: 20px;
-width:calc(100%/6);
-background:#e6cdad;
-background:#faf2e882;
-
+width:calc(100%/ 6 - 40px);
+border-radius: 10px;
+background:#dea597;
 &:hover{
     transform:scale(1.05);
     background:#faf2e8;
-    box-shadow: #997d4f 18px 15px 24px 2px;
+   
+    box-shadow: #dea597 0px 0px 39px 4px;;
     h4{
         color:#997d4f;
         text-decoration:unset!important;
@@ -123,9 +123,9 @@ class Card extends Component {
             <Heading2>
                {this.props.name2}
             </Heading2>
-            <Text>
+            {/* <Text>
                 <Des>{this.props.message}</Des>
-            </Text>
+            </Text> */}
             <br/>
         </Container>  
         );

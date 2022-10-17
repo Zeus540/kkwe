@@ -11,9 +11,9 @@ justify-content:center;
 align-items:center;
 margin:0 auto;
 height:100%;
-background:var(--secondary-color);
+background:white;
 background-attachment:fixed;
-background-image:url(${Un2});
+
 background-size:100% 100%;
 z-index:1;
 position:relative;
@@ -22,7 +22,7 @@ position:relative;
 }
 `
 const Overlay = styled.div`
-background-color:#5b4c4080!important;
+
 position:relative;
 margin-top:0%;
 left:0%;
@@ -36,17 +36,18 @@ padding: 0% 0% 3% 0%;
 `
 
 const Heading = styled.h2`
-color: white;
+color: #dea597;
 margin: 0px;
-padding: 5px 5px;
 text-align: center;
+font-size: 30px;
+}
 `
 
 const Holder = styled.div`
 margin:0 auto;
 text-align:center;
 display:flex;
-padding:30px 5px;
+padding:40px 5px;
 justify-content:center;
 color: white;
 `

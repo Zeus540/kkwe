@@ -6,7 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Container=styled.div`
-   background:#ba9d6d;
+   background:#dea597;
     background-size:100% 100%;
     min-height:100%;
     width:calc(100%/1)
@@ -77,7 +77,8 @@ const Heading=styled.h2`
     text-align:center;
     color:white;
     margin:0px;
-    padding: 5px 5px;
+    padding: 40px 5px;
+    font-size: 30px;
 `
 const Holder= styled.div`
 margin:0 auto;
@@ -89,14 +90,14 @@ color: white;
 `
 
 const FormContainer=styled.div`
-    width:Calc(100%/2);
+
     padding:0px 5% 0px 4% ;
 @media(max-width:768px){
     width:Calc(100%/1);
     padding:0px;
 }
 @media(min-width:1025px){
-    width:Calc(100%/3);
+   
 }
 `
 const Block = styled.div`

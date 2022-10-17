@@ -33,11 +33,12 @@ justify-content:space-around;
 const Input =styled.input`
 border:none;
 background:transparent;
-border-bottom:2px solid var(--secondary-color);
+border-bottom:2px solid white;
 min-height:35px;
 margin-bottom:5px;
 margin-top:5px;
 color:aliceblue;
+width: 100%;
 @media(max-width:786px){
     width:100%;
     
@@ -48,8 +49,8 @@ color:aliceblue;
 const Validate =styled.input`
 border:none;
 border:none;
-border-left:2px solid var(--secondary-color);
-border-bottom:2px solid var(--secondary-color);
+border-left:2px solid white;
+border-bottom:2px solid white;
 min-height:35px;
 margin-top:5%;
 margin-bottom:5px;
@@ -89,12 +90,13 @@ color:white;
 
 const Textarea =styled.textarea`
 border:none;
-border-left:2px solid var(--secondary-color);
-border-bottom:2px solid var(--secondary-color);
+border-left:2px solid white;
+border-bottom:2px solid white;
 margin-bottom:20px;
 margin-top:10px;
 background:transparent;
 color:white;
+width: 100%;
 @media(max-width:786px){
     width:100%;
     
@@ -102,7 +104,7 @@ color:white;
 `
 
 const Field =styled.fieldset`
-
+width: 100%;
 `
 
 

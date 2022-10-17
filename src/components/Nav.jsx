@@ -11,7 +11,7 @@ background:var(--transparent);
 margin: 0px!important;
 z-index: 200;
 color:var(--primary-color);
-position: fixed;
+position: sticky;
 height:auto;
 display:flex;
 
@@ -31,7 +31,7 @@ margin: 0px;
 align-items: center;
 position: absolute;
        right: 0px;
-       background-color:#997d4f;
+       background-color:#ddb0a5;
 @media(min-width:426px){
    
   }
@@ -69,7 +69,7 @@ font-size:12px;
   &:hover {
     padding: 20px 40px;
     background:#faf2e8;
-    color:#997d4f;
+    color:#ddb0a5;
     
   }
   

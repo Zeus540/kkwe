@@ -17,15 +17,15 @@ justify-content: center;
 margin: 0 auto;
 width: 100%;
 @media(max-width:425px){
-      flex-direction:column  ;
-      justify-content: center;
+  flex-direction:column  ;
+  justify-content: center;
       margin:0 auto;
   }
 @media(min-width:426px) and (max-width:786px){
-     flex-direction:row ;
+  flex-direction:row ;
   flex-wrap: wrap;
-    justify-content: center;
-    margin:0 auto;
+justify-content: center;
+   margin:0 auto;
 }
 `
 

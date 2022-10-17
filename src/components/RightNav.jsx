@@ -38,15 +38,7 @@ font-size:12px;
 
 `
 
-const ListItemline = styled.li`
-list-style:none;
-color:white;
-margin:0px 0px
-height:auto;
-@media (max-width: 768px) {
- display:none;}
-`
-;
+
 
 const RightNav = ({ open }) => {
   return (
@@ -64,9 +56,7 @@ const RightNav = ({ open }) => {
         
       </Link>
      
-      &nbsp;
-        <ListItemline >|</ListItemline>
-        &nbsp;
+   
 
       <Link
         activeClass="active"
@@ -79,9 +69,7 @@ const RightNav = ({ open }) => {
       </Link>  
         
 
-        &nbsp;
-        <ListItemline >|</ListItemline>
-        &nbsp;
+     
 
       <Link
         activeClass="active"
@@ -93,9 +81,7 @@ const RightNav = ({ open }) => {
         ><ListItem >Packages</ListItem>
       </Link>
 
-      &nbsp;
-        <ListItemline >|</ListItemline>
-        &nbsp;
+
 
       <Link 
         activeClass="active"

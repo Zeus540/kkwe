@@ -5,15 +5,15 @@ import 'aos/dist/aos.css';
 import Top from '../images/overleft.png'
 
 const Container = styled.div`
-width:100%;
+
 justify-content:center;
 align-items:center;
 margin:0 auto;
 height:100%;
-padding-bottom:2%;
-background:#faf2e8;
+background:#ffffff;
 z-index:2;
 position:relative;
+padding:60px;
 `
 
 const ContainerInner = styled.div`
@@ -29,10 +29,11 @@ padding: 0px 5% 0% 5%;
 `
 
 const Heading = styled.h2`
-color:#ac946e;
+color:#dea597;
 margin: 0px;
 text-align: center;
-padding: 5px 5px;
+
+font-size: 30px;
 `
 
 const Box = styled.div`
@@ -46,6 +47,7 @@ display:flex;
 justify-content:center;
 padding:30px 5px;
 color: white;
+padding-top:0px;
 `
 
 const Block1 = styled.div`
@@ -59,13 +61,11 @@ const Text = styled.p`
 const Image = styled.img`
 position: absolute;
 left: 0px;
-height: 300%;
+
 z-index: 125;
 bottom:0px;
-display:none;
-@media(max-width:1440px){
-  display:none;
-}
+
+
 `
 
 class Events extends Component {

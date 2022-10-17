@@ -5,17 +5,19 @@ import 'aos/dist/aos.css';
 import Top from '../images/over.png'
 
 const Container = styled.div`
-background:#faf2e8;
+background: linear-gradient(180deg,#dea597,#ffffff);
 text-align: center;
 position: relative;
-z-index: 2;
+z-index: 5555;
+padding: 20px;
 `
 
 const Heading = styled.h2`
-color:#ac946e;
+color:white;
 margin: 0px;
 text-align: center;
 padding: 5px 5px;
+font-size:30px;
 `
 
 
@@ -26,6 +28,7 @@ text-align:center;
 display:block
 margin:0 auto;
 padding-bottom:20px;
+padding: 18px;
 @media(max-width:768px){
   max-width:unset;
   padding:5%;
@@ -64,7 +67,7 @@ class TextBanner extends Component {
     render(){ 
         return ( 
           <Container id="AboutUs" >
-              <Image data-aos='slide-left' src={Top} alt={this.props.alt}/>
+              <Image data-aos='slide-left' src={Top} alt={this.props.alt} width="100%"/>
               <Block data-aos='fade-up'>
                 <Holder className="headings">
                   <Heading className="headings">Welcome</Heading>
