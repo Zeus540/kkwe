@@ -1,6 +1,6 @@
 import React, { Component,Fragment } from 'react';
 import styled from 'styled-components';
-
+import { Formik } from 'formik';
 
 const Container =styled.div`
 background-color:var(--transparent);
@@ -114,32 +114,59 @@ class Forms extends Component {
         return (
             
            <Container>
-                  <Fragment>
-            <div id="message" class="c-message"></div>
-            </Fragment>
-                <Form method="post" action="./contact.php" name="contactform" id="contactform" class="form c-form">
-            
-					<Field>
-                        <Label htmlFor="name">Name</Label>
-                        
-						<Input name="name" type="text" id="name" placeholder="Your Name" />
-                        &nbsp;
-                        <Label htmlFor="email">Email</Label>
-                        
-						<Input name="email" type="text" id="email" placeholder="Your E-mail" />
-                        &nbsp;
-                        <Label htmlFor="comments">Message</Label>
-                        &nbsp;  
-						<Textarea name="comments" id="comments" placeholder="Message" rows="8" cols="50" ></Textarea>
-
-                        <Label htmlFor="verify">Verify</Label>
-                        
-						<Validate name="verify" type="text" id="verify" placeholder="How much is 3 + 1 =" />
-                       
-                        <br/>
-						<Submit type="submit" class="submit btn outline" id="submit" value="Send message" />
-					</Field>
-				</Form>
+            <Formik
+       initialValues={{ email: '', password: '' }}
+       validate={values => {
+         const errors = {};
+         if (!values.email) {
+           errors.email = 'Required';
+         } else if (
+           !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+         ) {
+           errors.email = 'Invalid email address';
+         }
+         return errors;
+       }}
+       onSubmit={(values, { setSubmitting }) => {
+         setTimeout(() => {
+           alert(JSON.stringify(values, null, 2));
+           setSubmitting(false);
+         }, 400);
+       }}
+     >
+       {({
+         values,
+         errors,
+         touched,
+         handleChange,
+         handleBlur,
+         handleSubmit,
+         isSubmitting,
+         /* and other goodies */
+       }) => (
+         <form onSubmit={handleSubmit}>
+           <input
+             type="email"
+             name="email"
+             onChange={handleChange}
+             onBlur={handleBlur}
+             value={values.email}
+           />
+           {errors.email && touched.email && errors.email}
+           <input
+             type="password"
+             name="password"
+             onChange={handleChange}
+             onBlur={handleBlur}
+             value={values.password}
+           />
+           {errors.password && touched.password && errors.password}
+           <button type="submit" disabled={isSubmitting}>
+             Submit
+           </button>
+         </form>
+       )}
+     </Formik>
             </Container>
          );
     }

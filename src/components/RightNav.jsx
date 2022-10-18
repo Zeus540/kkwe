@@ -34,7 +34,7 @@ transition: ease-in 200ms;
 height:auto;
 text-transform:uppercase;
 font-size:12px;
-
+cursor:pointer
 
 `
 

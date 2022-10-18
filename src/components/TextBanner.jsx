@@ -29,6 +29,7 @@ display:block
 margin:0 auto;
 padding-bottom:20px;
 padding: 18px;
+font-size:18px;
 @media(max-width:768px){
   max-width:unset;
   padding:5%;

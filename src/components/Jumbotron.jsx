@@ -89,7 +89,7 @@ color:aliceblue;
 text-align:center;
 z-index:0;
 width: 100%;
-
+font-size: 25px;
 
 `
 

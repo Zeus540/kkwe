@@ -23,6 +23,7 @@ line-height:20px;
 text-align:center;
 margin:0 auto;
 padding: 0px 5% 0% 5%;
+width:60%;
 @media(max-width:640px){
   display:block;
 }
@@ -55,7 +56,8 @@ const Block1 = styled.div`
 `
 
 const Text = styled.p`
-
+font-size:18px;
+padding: 18px;
 `
 
 const Image = styled.img`

@@ -15,6 +15,7 @@ const Container=styled.div`
     position:relative;
     display:flex;
     padding-left:5%;
+    overflow: hidden;
     @media (max-width:425px){
         height:100%;
         padding:5%;
@@ -162,10 +163,10 @@ position:relative;
 
 `
 const Image = styled.img`
-position:absolute;
+
 right:0;
-height:100%;
-width:90%;
+
+width:100%;
 
 `
 
